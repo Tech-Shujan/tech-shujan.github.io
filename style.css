@@ -21,6 +21,9 @@ html{
     margin-left: 5px;
     top: 15px;
 }
+#contact img{
+    margin-left: 10px;
+}
 #copyright-section p{
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
@@ -60,27 +63,6 @@ html{
         height: 35px;
         position: relative;
         left: -4.5%;
-    }
-    #link-img a{
-        margin-left: 30px;
-    }
-}
-@media only screen and (max-width: 411px){
-    #intro{
-        height: 820px;
-    }
-    .contact img{
-        height: 35px;
-        margin-left: 10px;
-        margin-top: 20px;
-    }
-    #header{
-        display: none;
-    }
-    #link-img img{
-        height: 40px;
-        position: relative;
-        left: -4%;
     }
     #link-img a{
         margin-left: 30px;
