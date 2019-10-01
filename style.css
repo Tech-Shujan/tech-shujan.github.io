@@ -18,6 +18,7 @@ html{
     font-family: 'Montserrat', sans-serif;
     transition: 0.1s all ease;
     position: relative;
+    margin-left: 5px;
     top: 15px;
 }
 #copyright-section p{
