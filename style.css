@@ -1,117 +1,75 @@
-html{
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
+html,
+body,
+header,
+#intro-section {
+    height: 100%;
+}
+
+body{
     scroll-behavior: smooth;
 }
-#header{
-    position: fixed;
-    top: 0px;
-    background-color: rgb(0,0,0,0.3);
-    width: 100%;
-    height: 70px;
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    #intro-section {
+        height: 100vh;
+    }
 }
-#header a{
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.1s all ease;
-    position: relative;
-    top: 15px;
+
+.top-nav-collapse, .page-footer {
+    background-color: #563e91 !important;
 }
-#copyright-section p{
-    font-size: 22px;
-    font-family: 'Montserrat', sans-serif;
+
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
 }
-#intro{
-    background-color: black;
-    width: 100%;
-    height: 667px;
-    color: white;
+
+@media (max-width: 991px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #563e91 !important;
+    }
 }
-#big_name{
-    font-size: 75px;
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-}
-#prof{
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    font-size: 24px;
-}
-#about{
-    width: 100%;
-    height: 940px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-}
-#projects_table{
-    width: 100%;
-    height: 640px;
-}
-#contact{
-    width: 100%;
-    height: 620px;
-}
-.bg{
-    /* The image used */
-    background-color:  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-      height: 670px;
-      width: 100%;
-      background-color: rgb(0,0,0,0.6);
-      position: absolute;
-      top: 0%;
-  }
-  #back_img{
-      height: 670px;
-      width: 100%;
-      position: absolute;
-      top: 0%;
-  }
-@media only screen and (max-width: 750px){
-    #header{
+
+@media (max-width: 777px){
+    #discord{
         display: none;
     }
-}  
-@media only screen and (max-width: 360px){
-    .contact img{
-        height: 35px;
-        margin-left: 10px;
-        margin-top: 20px;
-    }
-    #about{
-        height: 1000px;
-    }
-    #link-img img{
-        height: 35px;
-        position: relative;
-        left: -4.5%;
-    }
-    #link-img a{
-        margin-left: 30px;
-    }
 }
-@media only screen and (max-width: 411px){
-    #intro{
-        height: 820px;
-    }
-    .contact img{
-        height: 35px;
-        margin-left: 10px;
-        margin-top: 20px;
-    }
-    #link-img img{
-        height: 40px;
-        position: relative;
-        left: -4%;
-    }
-    #link-img a{
-        margin-left: 30px;
-    }
+
+.rgba-gradient {
+    background: rgba(35, 7, 77, 0.6);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.img-gradient:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
+    background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+    /* IE6-9 */
+}
+#logo{
+    height: 90px;
 }
